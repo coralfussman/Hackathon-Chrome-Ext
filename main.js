@@ -12,6 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     //   console.log('Value currently is ' + result.key);
     // });
     
+    // chrome.storage.sync.set({key: value}, function() {
+    // console.log('Value is set to ' + value);
+    // });
+    
     const catForm = document.querySelector("#create-cat-form")
 
 
@@ -69,12 +73,67 @@ document.addEventListener("DOMContentLoaded", () => {
       catForm.value = "";
 
       
-      // chrome.storage.sync.set({key: value}, function() {
-      //   console.log('Value is set to ' + value);
-      //   });
+
 
 
 
 
     })
+      // const getFavicons = require('get-website-favicon')
+      // getFavicons('${webformInput.value}').then(data=>{
+      //   let imgUrl = data.icons[0].src
+      //       imgUrl.setAttribute('href',`${webformInput.value}`)
+      // }) 
+
     
+      // li.innerText = webformInput.value
+
+        // fetch(`${webformInput.value}`){
+        //   .then()
+        //   .then(data => //obj of data containing favicon that needs to be accessed )
+        // }
+
+
+  
+    
+      
+    })
+
+
+  //   var getFavicon = function(){
+  //     var favicon = undefined;
+  //     var nodeList = document.getElementsByTagName("link");
+  //     for (var i = 0; i < nodeList.length; i++)
+  //     {
+  //         if((nodeList[i].getAttribute("rel") == "icon")||(nodeList[i].getAttribute("rel") == "shortcut icon"))
+  //         {
+  //             favicon = nodeList[i].getAttribute("href");
+  //         }
+  //     }
+  //     return favicon;        
+  // }
+
+
+  
+//   document.addEventListener("DOMContentLoaded", () => {
+
+//     const webForm = document.querySelector("#create-web-form")
+    
+//     webForm.addEventListener("submit", (e) => {
+
+        // e.preventDefault()
+        // const webformInput = document.querySelector("#new-web-description")
+        // const ul = document.querySelector("ul")
+        // const li = document.createElement("li")
+        // const aTag = document.createElement("a")
+        // aTag.href = webformInput.value
+        // const hyperLinkedImage = document.createElement("img")
+        // hyperLinkedImage.src = "http://s2.googleusercontent.com/s2/favicons?domain_url=" + webformInput.value
+        // hyperLinkedImage.width = "60"
+        // hyperLinkedImage.height = "60
+        // aTag.appendChild(hyperLinkedImage)
+        // document.querySelector("div").appendChild(aTag)
+        // webformInput.value = "";
+//     });
+
+// });
