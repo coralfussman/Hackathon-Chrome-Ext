@@ -7,8 +7,9 @@
 </head>
 <body>
   <div class="main-container">
-    <div class="input-row">
-      <h1>WORKBENCH™️</h1>
+    <h1>WORKBENCH™️</h1>
+    <div class="input-col">
+      <div class="input-row">
 
       <form id="create-cat-form" action="#" method="post">
         <label for="new-cat-description">Add Category:</label>
@@ -19,17 +20,20 @@
       <form id="create-web-form" action="#" method="post">
         <label for="new-web-description">Drop That Link:</label>
         <input type="text" id="new-web-description" name="new-web-description" placeholder="new web url">
+        
         <input type="submit" value="Add to Workbench">
       </form>
 
       <div id="cat-title">
-        <h2>Category</h2>
+        <h2>CATEGORY</h2>
       <p id="cat-p"></p>
 
         <div id="web-list">
-          <h2>Current Grind</h2>
+          
+          <h2>CURRENT GRIND</h2>
           <ul id="web" style="list-style-type:none">
           </ul>
+      </div>
     </div>
   </div>
     <!-- <script>fake db from json file, persisting to local Storage</script> -->

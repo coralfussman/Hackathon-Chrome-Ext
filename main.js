@@ -1,4 +1,4 @@
-
+// const getFavicons = require('get-website-favicon')
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -35,6 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
       icon.setAttribute("class", "icon")
       li.appendChild(icon)
 
+      // const getFavicons = require('get-website-favicon')
+      // getFavicons('${webformInput.value}').then(data=>{
+      //   let imgUrl = data.icons[0].src
+      //       imgUrl.setAttribute('href',`${webformInput.value}`)
+      // }) 
+
+      
       const aTag = document.createElement('a');
       aTag.setAttribute('href',`${webformInput.value}`);
       aTag.innerText = "visit";
@@ -43,7 +50,29 @@ document.addEventListener("DOMContentLoaded", () => {
       // li.innerText = webformInput.value
       ul.appendChild(li)
         console.log(li)
+
+        // fetch(`${webformInput.value}`){
+        //   .then()
+        //   .then(data => //obj of data containing favicon that needs to be accessed )
+        // }
+
+
     })
     
       
     })
+
+
+  //   var getFavicon = function(){
+  //     var favicon = undefined;
+  //     var nodeList = document.getElementsByTagName("link");
+  //     for (var i = 0; i < nodeList.length; i++)
+  //     {
+  //         if((nodeList[i].getAttribute("rel") == "icon")||(nodeList[i].getAttribute("rel") == "shortcut icon"))
+  //         {
+  //             favicon = nodeList[i].getAttribute("href");
+  //         }
+  //     }
+  //     return favicon;        
+  // }
+  
