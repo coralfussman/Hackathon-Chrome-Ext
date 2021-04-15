@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Workbench™️</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="input-row">
+      <h1>WORKBENCH™️</h1>
+
+      <form id="create-cat-form" action="#" method="post">
+        <label for="new-cat-description">Add Category:</label>
+        <input type="text" id="new-cat-description" name="new-cat-description" placeholder="add Category">
+        <input type="submit" value="Create New Category">
+      </form>
+
+      <form id="create-web-form" action="#" method="post">
+        <label for="new-web-description">Drop That Link:</label>
+        <input type="text" id="new-web-description" name="new-web-description" placeholder="new web url">
+        <input type="submit" value="Add to Workbench">
+      </form>
+
+      <div id="cat-title">
+        <h2>Category</h2>
+      <p id="cat-p"></p>
+
+        <div id="web-list">
+          <h2>Current Grind</h2>
+          <ul id="web" style="list-style-type:none">
+          </ul>
+    </div>
+  </div>
+    <!-- <script>fake db from json file, persisting to local Storage</script> -->
+    <script src="./main.js"></script>
+  </div>
+
+</body>
+</html>
