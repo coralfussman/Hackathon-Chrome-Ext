@@ -16,6 +16,9 @@ body {
   font-family: "Jost", sans-serif;
   background-image: url("https://st.depositphotos.com/1020341/2682/i/950/depositphotos_26820715-stock-photo-white-wood-background.jpg");
 }
+h1 {
+  text-shadow: 2px 2px 15px white;
+}
 
 .main-container {
   /* margin: 10%; */
@@ -80,9 +83,14 @@ p {
   align-items: left;
   text-align: left;
   color: rgb(141, 69, 10);
+  margin: 0;
   /* padding: 40px; */
 
   /* box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.404); */
+}
+
+#cat-p {
+  margin: 0;
 }
 #web-list {
   width: 100%;
@@ -115,17 +123,19 @@ input {
   color: rgb(141, 69, 10);
 }
 
-.icon {
+.iconDiv {
   height: 70px;
   width: 70px;
   border-radius: 50%;
+  margin: 30px;
 
-  background: rgb(141, 69, 10);
+  background: white;
   margin: 5px;
+  box-shadow: 3px 3px 1px rgb(0, 0, 0);
 }
 
 a {
-  color: white;
+  color: rgb(141, 69, 10);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -133,6 +143,7 @@ a {
   align-items: center;
   text-align: center;
   position: relative;
+  margin: 0;
   /* padding: 20px; */
 }
 #web-list {

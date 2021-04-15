@@ -31,25 +31,45 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(webformInput.value);
       const ul = document.querySelector("ul")
       const li = document.createElement("li")
-      const icon = document.createElement("div")
+      const iconDiv = document.createElement("div")
+      const icon = document.createElement("img")
+      iconDiv.setAttribute("class", "iconDiv")
       icon.setAttribute("class", "icon")
-      li.appendChild(icon)
+      ul.appendChild(li)
+      li.appendChild(iconDiv)
+      iconDiv.appendChild(icon)
+      
 
+        
+      ul.appendChild(li)
+       const aTag = document.createElement("a")
+      aTag.setAttribute("href", `${webformInput.value}`)
+      aTag.innerText = "visit";
+      iconDiv.appendChild(aTag);
+      
+     
+      // console.log(li)
+
+     
+      // aTag.href = webformInput.value
+      // const hyperLinkedImage = document.createElement("img")
+      icon.src = "http://s2.googleusercontent.com/s2/favicons?domain_url=" + webformInput.value
+      icon.width = "28"
+      icon.height = "28"
+      // icon.setAttribute("href", webformInput.value)
+      // aTag.appendChild(hyperLinkedImage)
+      // document.querySelector("div").appendChild(aTag)
+      webformInput.value = "";
+      catForm.value = "";
+    })
       // const getFavicons = require('get-website-favicon')
       // getFavicons('${webformInput.value}').then(data=>{
       //   let imgUrl = data.icons[0].src
       //       imgUrl.setAttribute('href',`${webformInput.value}`)
       // }) 
 
-      
-      const aTag = document.createElement('a');
-      aTag.setAttribute('href',`${webformInput.value}`);
-      aTag.innerText = "visit";
-      icon.appendChild(aTag);
-      
+    
       // li.innerText = webformInput.value
-      ul.appendChild(li)
-        console.log(li)
 
         // fetch(`${webformInput.value}`){
         //   .then()
@@ -57,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // }
 
 
-    })
+  
     
       
     })
@@ -75,4 +95,28 @@ document.addEventListener("DOMContentLoaded", () => {
   //     }
   //     return favicon;        
   // }
+
+
   
+//   document.addEventListener("DOMContentLoaded", () => {
+
+//     const webForm = document.querySelector("#create-web-form")
+    
+//     webForm.addEventListener("submit", (e) => {
+
+        // e.preventDefault()
+        // const webformInput = document.querySelector("#new-web-description")
+        // const ul = document.querySelector("ul")
+        // const li = document.createElement("li")
+        // const aTag = document.createElement("a")
+        // aTag.href = webformInput.value
+        // const hyperLinkedImage = document.createElement("img")
+        // hyperLinkedImage.src = "http://s2.googleusercontent.com/s2/favicons?domain_url=" + webformInput.value
+        // hyperLinkedImage.width = "60"
+        // hyperLinkedImage.height = "60
+        // aTag.appendChild(hyperLinkedImage)
+        // document.querySelector("div").appendChild(aTag)
+        // webformInput.value = "";
+//     });
+
+// });
